@@ -8,11 +8,11 @@ export class MessageService {
 
   constructor() { }
 
-  add(messages:String){
+  add(messages: String) {
     this.messages.push(messages);
   }
 
-  clear(){
+  clear() {
     console.log('cleared ');
     this.messages = [];
   }

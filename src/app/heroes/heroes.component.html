@@ -11,10 +11,11 @@
 
 <h2>{{title}} Details</h2>
 <ul class="heroes">
-  <li *ngFor="let hero of hero" 
-  [class.selected]="hero === selectedHero"
-  (click)="onSelect(hero)">
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  <li *ngFor="let hero of hero">
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+    {{hero.name}}
   </li>
 </ul>
 
